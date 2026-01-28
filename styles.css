@@ -22,7 +22,7 @@
     /* .card {
       duplicate selector created again to add new styles.
     } */
-*/
+
 
 /*
   TODO 0: Link the style sheet using the link tag inside the head tag.
@@ -35,10 +35,12 @@
   - Apply a global box-sizing reset using the universal selector (hint use * selector).
 */
 
+
 /* TODO 2:
    - Give .site-header & .site-footer a subtle background using var(--card)
    - Make the .tagline class a bit muted (use var(--muted))
 */
+
 
 /* TODO 3:
    - Set the color to the brand variable and make the text bold for the .color-demo .color-note class.
@@ -86,12 +88,62 @@ body {
   --muted: #6b7280;        /* muted text */
   --bg: #f6f7fb;           /* page background */
   --card: #ffffff;         /* card/background surfaces */
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
 }
 
 .site-header,
 .site-footer {
+  background: var(--card);
   text-align: center;
   padding: 1.25rem;
+}
+
+.tagline {
+  color: var(--muted);
+}
+
+.color-demo , .color-note{
+  color: var(--brand);
+  font-weight: bold;
+}
+
+.color-demo , .muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.bg-sample {
+  width: 100%;
+  min-height: 80px;
+  padding: 0.75rem;
+  margin-block: 0.75rem;
+  border-radius: 1rem;
+  color:#ffffff;
+  background-color: linear-gradient(135deg, var(--brand), #22c55e);
+}
+
+.inline-label{
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+
+}
+
+.inline-label.alt{
+  display: inline-block;
+  border: dashed;
+}
+
+.copy , .title {
+  font-size: 1rem;
+  font-weight: 650;
+  text-transform: capitalize;
+}
+
+.copy , .intro{
+  font-style: italic;
+  line-height: 20%;
 }
 
 .container {
