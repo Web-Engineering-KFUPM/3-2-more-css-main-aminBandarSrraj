@@ -144,6 +144,7 @@ body {
 .copy , .intro{
   font-style: italic;
   line-height: 20%;
+  margin: 0.25rem 0 0 0;
 }
 
 .container {
@@ -166,8 +167,49 @@ body {
 }
 
 .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   padding: 0.5rem;
   border: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+}
+.btn:hover {
+  background: var(--brand-dark);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.product-grid, .item {
+  flex: 1px 1px 140px;
+  min-height: 90px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+.static-box {
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.5rem;
 }
 
 .position-stage {
